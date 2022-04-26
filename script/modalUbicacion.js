@@ -20,5 +20,5 @@ const listado_ciudades = document.getElementById('listado_ciudades')
 
 function valor_ciudad(){
     console.log(listado_ciudades.value);
-    localStorage.setItem('ubicacion',listado_ciudades.value)
+    localStorage.setItem('ubicacion',listado_ciudades.value);
 }
