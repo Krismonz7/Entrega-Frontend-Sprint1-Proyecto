@@ -58,12 +58,35 @@
 .ubicacion p{
   margin: auto;
   border: 2px solid red;
+  font-size: 20px;
+  width: 70%;
+  height: 80%;
+  padding: 5px;
 }
 
 .imagen_ubicacion{
   margin: auto;
   border: 2px solid cyan;
+  width: 7%;
+  height: 75%;
 }
+.imagen_ubicacion img{
+  width: 100%;
+  height: 100%;
+}
+
+.flecha{
+  border: 2px solid rgb(0, 0, 0);
+  width: 10%;
+  height:75%;
+  margin: auto;
+  display: flex;
+}
+.flecha i{
+  margin: auto;
+  color: orangered;
+}
+
 
 .boton_carrito{
   margin: auto;
@@ -103,12 +126,13 @@
 }
 
 .productos_carrito{
-  width: 25%;
+  width: 30%;
   height: 70%;
   text-align: center;
   margin: auto;
   justify-content: center;
-  font-size: 25px;
+  font-size: 20px;
+
 }
 
 
