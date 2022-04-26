@@ -147,7 +147,7 @@
 }
 
 .bienvenida{
-  background-image: url("../img/nav-bar/Banner2.jpg");
+  background-image: url("../img/nav-bar/Banner3.jpg");
   background-position:center center; /*respecto a body*/
   background-repeat: no-repeat;
   height: 100%;
@@ -173,6 +173,7 @@
 .ofertas{
   margin: auto;
   height: 10%;
+  border: 2px solid orangered;
 }
 
 .deslizador{
