@@ -1,6 +1,6 @@
 .modal-container{
     display:flex;
-    background:  rgba(0, 255, 94, 0.329);
+    background:  rgba(43, 43, 43, 0.701);
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -21,7 +21,6 @@
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
     align-items: center;
     opacity: 0;
 }
@@ -48,9 +47,8 @@
 
 
 .listado_ciudades{
-    border: 3px solid rgb(0, 241, 221);
     margin: auto;
-    width: 30%;
+    width: 40%;
     height: 15%;
     border-radius: 10px;
     text-align: center;

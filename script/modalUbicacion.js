@@ -17,8 +17,11 @@ modal_container.classList.remove('show');
 
 //segundo modal
 const listado_ciudades = document.getElementById('listado_ciudades')
+const ciudad =  document.getElementById('valor_ciudad')
 
 function valor_ciudad(){
     console.log(listado_ciudades.value);
     localStorage.setItem('ubicacion',listado_ciudades.value);
+    ciudad.innerHTML=`${listado_ciudades.value}`
+
 }

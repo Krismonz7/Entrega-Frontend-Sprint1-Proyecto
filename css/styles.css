@@ -57,10 +57,12 @@
 
 .ubicacion p{
   margin: auto;
+  border: 2px solid red;
 }
 
 .imagen_ubicacion{
   margin: auto;
+  border: 2px solid cyan;
 }
 
 .boton_carrito{
