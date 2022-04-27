@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /*font-family: 'Roboto', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
+/*font-family: 'Radio Canada', sans-serif;*/
 *{
     margin: 0%;
     padding: 0%;
@@ -135,6 +137,10 @@
   display: flex;
 }
 
+/*Body fuera del nav-bar*/
+.cuerpo{
+  background: rgb(252, 252, 252);
+}
 
 /*Seccion bienvenida*/
 
@@ -166,45 +172,88 @@
 /*Seccion de ofertas*/
 
 .seccion_ofertas{
-  border: 3px solid cyan;
-  width: 100%;
-  height: 70vh;
+  width: 95%;
+  margin: 20px auto;
+  min-width: 80vh;
+  margin: auto;
   display: flex;
+  flex-direction: column;
   min-width: 370px;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.412);
+  background: white;
 }
 
 .cards{
-  border: 3px solid blueviolet;
   display: flex;
   flex-direction: row;
-  width: 90%;
-  height: 80%;
+  width: 100%;
   margin: auto;
   justify-content: space-around;
-  border-radius: 15px;
+  padding: 13px;
+  flex-wrap: wrap;
+}
+
+.ofertas{
+  
+  font-family: 'Radio Canada', sans-serif;
+  width: 98%;
+  margin: auto;
+
 }
 /*Estilos tarjeta*/
 .tarjeta{
-  border: 2px solid blue;
-  height: 80%;
+  height: 50vh;
   width: 17%;
-  margin: auto;
+  min-width: 170px;
+  min-height: 450px;
+  flex: 1;
+  margin: 20px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px 1px rgba(195, 195, 195, 0.16);
 }
 .descuento{
-  border: 2px solid purple;
+
   width: 35%;
-  color: purple;
-  background:rgb(255, 136, 255);
+  color: rgb(66, 0, 66);
+  background: rgb(222, 184, 222);
   border-radius: 10px;
   text-align: center;
+  font-size: 15px;
+  margin: 1px 80% 1px 2%;
 }
 
 .imagen_tarjeta{
-  border: 2px solid greenyellow;
-  
+  width: 80%;
+  margin: auto;
 }
 .imagen_tarjeta img{
   width: 100%;
   height: 100%;
+}
+
+.precio{
+  font-weight: bold;
+  font-family: 'Radio Canada', sans-serif;
+  margin: 1px auto;
+  width: 90%;
+}
+
+.titulo{
+  margin: 1px auto;
+  width: 90%;
+}
+
+.agregar{
+  background: #0ac863;
+  color: white;
+  font-size: 15px;
+  margin: auto;
+  width: 80%;
+  height: 10%;
+  border-radius: 10px;
+  border-style: none;
 }

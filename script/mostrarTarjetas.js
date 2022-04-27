@@ -13,7 +13,6 @@ function trearProducto (){
 
 function crearTarjeta(datos){
     console.log(datos);
-    cards.innerHTML="";
     datos.forEach(objeto => {
         let nombre= objeto.nombre;
         let precio= objeto.precio;
@@ -22,12 +21,12 @@ function crearTarjeta(datos){
         cards.innerHTML+=`
         <div class="tarjeta">
         <p class="descuento">
-            ${descuento}.dto
+            ${descuento}%dto
         </p>
         <div class="imagen_tarjeta">
         <img src=${imagen} alt="">
         </div>
-        <p class="precio">Precio:$ ${precio} </p>
+        <p class="precio">$ ${precio}/kg</p>
         <p class="titulo"> ${nombre}</p>
         <button class="agregar">
             Agregar
