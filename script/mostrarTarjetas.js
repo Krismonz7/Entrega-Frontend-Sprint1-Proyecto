@@ -53,19 +53,20 @@ function crearProducto2 (){
 }
 
 
+
 function crearTarjeta2(datos2){
     console.log(datos2);
     datos2.forEach((objeto2) => {
-        let nombre2= objeto2.nombre2;
-        let precio2= objeto2.precio2;
-        let imagen2= objeto2.imagen2;
+        let nombre= objeto2.nombre;
+        let precio= objeto2.precio;
+        let imagen= objeto2.imagen;
         cards2.innerHTML+=`
         <div class="tarjeta">
         <div class="imagen_tarjeta">
-        <img src=${imagen2} alt="">
+        <img src=${imagen} alt="">
         </div>
-        <p class="precio">$ ${precio2}/kg</p>
-        <p class="titulo"> ${nombre2}</p>
+        <p class="precio">$ ${precio}/kg</p>
+        <p class="titulo"> ${nombre}</p>
         <button class="agregar">
             Agregar
         </button>
@@ -73,6 +74,8 @@ function crearTarjeta2(datos2){
         `
     });
 }
+
+
 
 
 crearProducto(data);
