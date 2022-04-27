@@ -70,8 +70,7 @@ function crearTarjeta2(datos2){
         <button class="agregar">
             Agregar
         </button>
-    </div>  
-        `
+    </div>  `
     });
 }
 
