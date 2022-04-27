@@ -22,7 +22,7 @@ function crearTarjeta(datos){
         cards.innerHTML+=`
         <div class="tarjeta">
         <p class="descuento">
-            ${descuento}
+            ${descuento}.dto
         </p>
         <div class="imagen_tarjeta">
         <img src=${imagen} alt="">
