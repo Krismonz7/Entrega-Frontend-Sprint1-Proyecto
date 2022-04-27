@@ -25,14 +25,14 @@
             "nombre":"manzana",
             "precio":"17",
             "descuento":"10",
-            "imagen":"img/ofertas/Product (2).png"
+            "imagen":"img/ofertas/Product(2).png"
 
         },
         {
             "nombre":"Hoja de cactus",
             "precio":"10",
             "descuento":"57",
-            "imagen":"img/ofertas/Product (1).png"
+            "imagen":"img/ofertas/Product(1).png"
 
         }
     ],
@@ -40,31 +40,31 @@
         {
             "nombre":"Pavo",
             "precio":"27",
-            "imagen":"img/populares/Product (1).png"
+            "imagen":"img/populares/Product(1).png"
 
         },
         {
             "nombre":"Pan Bimbo",
             "precio":"18",
-            "imagen":"img/populares/Product (2).png"
+            "imagen":"img/populares/Product(2).png"
 
         },
         {
             "nombre":"Mayonesa",
             "precio":"30",
-            "imagen":"img/populares/Product (3).png"
+            "imagen":"img/populares/Product(3).png"
 
         },
         {
             "nombre":"Crema dental",
             "precio":"15",
-            "imagen":"img/populares/Product (4).png"
+            "imagen":"img/populares/Product(4).png"
 
         },
         {
             "nombre":"Huevos",
             "precio":"13",
-            "imagen":"img/populares/Product (5).png"
+            "imagen":"img/populares/Product(5).png"
 
         }        
     ]

@@ -3,7 +3,7 @@ const data = "https://tiendita-json.herokuapp.com/ofertas";
 //Llamada de dom
 const cards = document.getElementById('cards');
 
-function trearProducto (){
+function crearProducto (){
     fetch(data)
     .then((res)=>res.json())
     .then((data)=> crearTarjeta(data))
@@ -35,32 +35,31 @@ function crearTarjeta(datos){
     });
 
 }
-trearProducto(data);
+
 
 
 
 //Seccion populares
 //Links heroku
-const data_populares = "https://tiendita-json.herokuapp.com/populares";
+const data2 = "https://tiendita-json.herokuapp.com/populares";
 //Llamada de DOM
-const cards_2 = document.getElementById('cards_2');
+const cards2 = document.getElementById('cards2');
 
 
-function trearProducto2 (){
-    fetch(data_populares)
+function crearProducto2 (){
+    fetch(data2)
     .then((res2)=>res2.json())
-    .then((data_populares)=> crearTarjeta2(data_populares))
+    .then((data2)=> crearTarjeta2(data2))
 }
 
 
 function crearTarjeta2(datos2){
     console.log(datos2);
-    datos2.forEach(objeto2 => {
+    datos2.forEach((objeto2) => {
         let nombre2= objeto2.nombre2;
         let precio2= objeto2.precio2;
-        let descuento2= objeto2.descuento2;
         let imagen2= objeto2.imagen2;
-        cards_2.innerHTML+=`
+        cards2.innerHTML+=`
         <div class="tarjeta">
         <div class="imagen_tarjeta">
         <img src=${imagen2} alt="">
@@ -70,9 +69,13 @@ function crearTarjeta2(datos2){
         <button class="agregar">
             Agregar
         </button>
-    </div> 
+    </div>  
         `
     });
 }
+
+
+crearProducto(data);
+crearProducto2(data2);
 
 
