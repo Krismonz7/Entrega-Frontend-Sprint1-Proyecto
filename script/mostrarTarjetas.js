@@ -1,7 +1,7 @@
-
-
+//Links de heroku
 const data = "https://tiendita-json.herokuapp.com/ofertas";
 const data_populares = "https://tiendita-json.herokuapp.com/populares";
+//Llamada de 
 const cards = document.getElementById('cards');
 const cards_2 = document.getElementById('cards_2');
 
