@@ -11,6 +11,7 @@ function trearProducto (){
     .then((data)=> crearTarjeta(data))
 }
 
+//Seccion ofertas
 function crearTarjeta(datos){
     console.log(datos);
     datos.forEach(objeto => {
@@ -37,4 +38,34 @@ function crearTarjeta(datos){
 
 }
 trearProducto();
+
+//Seccion populares
+
+
+function crearTarjeta(datos){
+    console.log(datos);
+    datos.forEach(objeto => {
+        let nombre= objeto.nombre;
+        let precio= objeto.precio;
+        let descuento= objeto.descuento;
+        let imagen= objeto.imagen;
+        cards.innerHTML+=`
+        <div class="tarjeta">
+        <p class="descuento">
+            ${descuento}%dto
+        </p>
+        <div class="imagen_tarjeta">
+        <img src=${imagen} alt="">
+        </div>
+        <p class="precio">$ ${precio}/kg</p>
+        <p class="titulo"> ${nombre}</p>
+        <button class="agregar">
+            Agregar
+        </button>
+    </div> 
+        `
+    });
+
+}
+
 
