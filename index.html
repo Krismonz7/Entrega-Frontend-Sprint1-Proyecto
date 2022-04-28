@@ -19,7 +19,7 @@
 <body>
 <section class="contenedor_general">
 
-    <!-- Nav-bar -->
+    <!-- Nav-bar --> 
     <nav class="nav_bar">
 
         <div class="nav_bar_1">
@@ -112,36 +112,22 @@
 
       <!--Modal de detalle-->
 
-      <button id="open2">
+      <button id="open2" class="agregar">
           Abrir modal
       </button>
          
-      <div class="detalle-container" id="detalle_container">
-          <div class="detalle">
-              <div class="imagen_modal">
-                  <img src="img/populares/Product(3).png" alt="">
-              </div>
-              <div class="segunda_parte_modal">
-              <div class="titulo_detalle">
-                  <h3>Titulo</h3>
-              </div>
-              <div class="precio_detalle">
-                  <h4>$3</h4>
-              </div>
-   
-              <div class="seleccionable_detalle">
-                  <select name="" id="">
-                      <option value="">option 1</option>
-                      <option value="">option 2</option>
-                      <option value="">option 3</option>
-                  </select> 
-              </div>
-              <div class="cantidad_detalle">
-                
-              </div>
-              </div>
+      <div class="detalle_container" id="detalle_container">
+          <div class="modal_detalle">
+              <h1>Aqwi va la imagen</h1>
+              <select name="listado_detalle" id="listado_detalle" class="listado_detalle" >
+                  <option >opcion 1</option>
+                  <option >opcion 2</option>
+                  <option >opcion 3</option>
+              </select>
+              <button class="agregar" id="close2">
+                  Cerrar
+              </button>
           </div>
-      </div>
     </div>
 
 
@@ -156,6 +142,7 @@
 
 
     <!--Modal de detalle-->
+    <script src="script/modalDetalle.js"></script>
 
 
     <!--Boostrap-->

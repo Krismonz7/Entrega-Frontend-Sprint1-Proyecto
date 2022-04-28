@@ -15,7 +15,7 @@ modal_container.classList.remove('show');
 
 
 
-//segundo modal
+//valor ciudad navbar
 const listado_ciudades = document.getElementById('listado_ciudades')
 const ciudad =  document.getElementById('valor_ciudad')
 
