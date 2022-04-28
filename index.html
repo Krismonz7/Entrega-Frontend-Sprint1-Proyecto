@@ -117,18 +117,47 @@
       </button>
          
       <div class="detalle_container" id="detalle_container">
-          <div class="modal_detalle">
-              <h1>Aqwi va la imagen</h1>
-              <select name="listado_detalle" id="listado_detalle" class="listado_detalle" >
-                  <option >opcion 1</option>
-                  <option >opcion 2</option>
-                  <option >opcion 3</option>
-              </select>
+          <div class="modal_detalle" id="modal_detalle">
+              <div class="detalle_1">
+                <div class="imagen_detalle">
+                    <img src="img/ofertas/Product(1).jpg" alt="">
+                </div>
+                <div class="info_detalle">
+                    <h2>Titulo</h2>
+
+                    <h3>65$/kg</h3>
+
+                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dicta maiores cum odit vero 
+                        porro numquam illum illo minus inventore asperiores voluptas
+                        , aliquam nulla eos doloribus quia facilis magni consequuntur.</h6>
+
+                        <h6>Selecciona la madurez que deseas:</h6>
+                <select name="listado_detalle" id="listado_detalle" class="listado_detalle" >
+                    <option >opcion 1</option>
+                    <option >opcion 2</option>
+                    <option >opcion 3</option>
+                </select>
+
+                <div class="detalle_cantidad">
+                    <button id="restar">
+                        -
+                    </button>
+                    <h2 id="detalle_cantidad_productos">1</h2>
+                    <button id="sumar">
+                        +
+                    </button>
+                </div> 
+                <button class="agregar">
+                    agregar
+                </button>
+                </div>
+              </div>
               <button class="agregar" id="close2">
                   Cerrar
               </button>
           </div>
     </div>
+
 
 
 
@@ -143,6 +172,8 @@
 
     <!--Modal de detalle-->
     <script src="script/modalDetalle.js"></script>
+
+
 
 
     <!--Boostrap-->
