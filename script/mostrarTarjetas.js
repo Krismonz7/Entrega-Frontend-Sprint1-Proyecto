@@ -1,5 +1,6 @@
 //Links de heroku
 const data = "https://tiendita-json.herokuapp.com/ofertas";
+
 //Llamada de dom
 const cards = document.getElementById('cards');
 
@@ -11,7 +12,7 @@ function crearProducto (){
 
 //Seccion ofertas
 function crearTarjeta(datos){
-    console.log(datos);
+    console.log(datos)
     datos.forEach(objeto => {
         let nombre= objeto.nombre;
         let precio= objeto.precio;
@@ -55,7 +56,6 @@ function crearProducto2 (){
 
 
 function crearTarjeta2(datos2){
-    console.log(datos2);
     datos2.forEach((objeto2) => {
         let nombre= objeto2.nombre;
         let precio= objeto2.precio;
@@ -77,14 +77,9 @@ crearProducto(data);
 crearProducto2(data2);
 
 
-//Session strage prueba
-if(typeof(Storage) != 'undefined'){
-    console.log('es compatible :D');
-    let listaObjetos = ["php","https","c++"];
-    
-}else{
-    console.log('storage no es cmpatible con el navegador :B')
-} 
+
+
+
 
 
 
