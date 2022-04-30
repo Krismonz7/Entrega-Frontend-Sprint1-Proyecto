@@ -73,11 +73,19 @@ function crearTarjeta2(datos2){
     </div>  `
     });
 }
-
-
-
-
 crearProducto(data);
 crearProducto2(data2);
+
+
+//Session strage prueba
+if(typeof(Storage) != 'undefined'){
+    console.log('es compatible :D');
+    let listaObjetos = ["php","https","c++"];
+    
+}else{
+    console.log('storage no es cmpatible con el navegador :B')
+} 
+
+
 
 

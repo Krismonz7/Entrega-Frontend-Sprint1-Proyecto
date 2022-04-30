@@ -1,0 +1,91 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.carrito_modal_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0%;
+    right: 0%;
+    height: 100vh;
+    width: 40vw;
+    min-width: 395px; 
+    min-height: 100%;
+}
+
+.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+/*Estilos modal_carrito */
+.modal_carrito{
+    background: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header_modal_carrito{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(101, 101, 101, 0.641);
+}
+.header_modal_carrito h4{
+    height: 90%;
+    align-items: center;
+    display: flex;
+}
+
+
+
+
+/*body modal carrito*/
+.seccion_carrito{
+    width: 100%;
+    height: 100%;
+    background: rgb(252, 252, 252);
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion_carrito h3{
+    margin: auto;
+    font-weight: 300px; 
+}
+.imagen_modal_carrito{
+    margin: auto;
+    width: 70%;
+    margin: auto;
+}
+
+.imagen_modal_carrito img{
+    width: 100%;
+    height: 100%;
+}
+
+.boton_cerrar{
+    width: 10%;
+    height: 90%;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background: black;
+    font-size: 20px;
+    border: none;
+}
+ 
+
