@@ -12,7 +12,6 @@ function crearProducto (){
 
 //Seccion ofertas
 function crearTarjeta(datos){
-    console.log(datos)
     datos.forEach(objeto => {
         let nombre= objeto.nombre;
         let precio= objeto.precio;

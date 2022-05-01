@@ -12,7 +12,7 @@
     <!--Font awesome icons-->
     <script src="https://kit.fontawesome.com/adf933578f.js" crossorigin="anonymous"></script>
 
-    <title>Document</title>
+    <title>Proyecto Tiendita</title>
 </head>
 <body>  
 <section class="contenedor_general">
@@ -114,22 +114,22 @@
 
       <div class="carrito_modal_container" id="carrito-modal-container">
 
-        <div class="modal_carrito">
-            
+        <div class="modal_carrito" id="modal_carrito">
             <header class="header_modal_carrito">
                 <h4 id="ciudad">Entrega en : <i id="ciudad_modal_carrito">  Mexico city</i></h4>
                 <button id="close_carrito" class="boton_cerrar">
                     X
                 </button>
             </header>
+            <div class="sub_modal_carrito" id="sub_modal_carrito">
 
-            <div class="seccion_carrito">
+              <div class="seccion_carrito" id="seccion_carrito">
                 <div class="imagen_modal_carrito">
                 <img src="img/modales/carrito/car_vacio.png" alt="">
                 </div>
                 <h3>Tu carrito esta vacio</h3>
+              </div>
             </div>
-
         </div>
 
       </div>
@@ -137,13 +137,14 @@
 
 
     </div>
-
+    
     <!--Scripts locales --> 
     <!--Modal de navbar-->
     <script src="script/modalUbicacion.js"></script>
     <script src="script/mostrarTarjetas.js"></script>
     <script src="script/modalCarrito.js"></script>
 
-</section>
+
+</section> 
 </body>
 </html> 

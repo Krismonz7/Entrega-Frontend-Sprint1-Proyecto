@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
+/*font-family: 'Radio Canada', sans-serif;*/
 *{
     margin: 0%;
     padding: 0%;
+    font-family: 'Radio Canada', sans-serif;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -16,7 +22,7 @@
     height: 100vh;
     width: 40vw;
     min-width: 395px; 
-    min-height: 100%;
+    min-height: 560px;
 }
 
 .show{
@@ -52,13 +58,14 @@
 
 
 
-/*body modal carrito*/
+/*body modal carrito-vacio*/
 .seccion_carrito{
     width: 100%;
     height: 100%;
     background: rgb(252, 252, 252);
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .seccion_carrito h3{
@@ -89,3 +96,142 @@
 }
  
 
+/*body modal carrito-lleno*/
+
+.modal_carrito_tarjeta{
+    border-bottom: 2px solid gray;
+    width: 100%;
+    height: 25vh;
+    min-height: 100px;
+    min-width: 370px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modal_carrito_imagen_tarjeta{
+    width: 10%;
+    height: 90%;
+    min-width: 100px;
+    margin: auto;
+}
+
+.modal_carrito_imagen_tarjeta img{
+    width: 100%;
+    height: 100%;
+}
+
+.titulos{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    margin: auto;
+}
+
+.nombre{
+    width: 100%;
+}
+.precio{
+    width: 100%;
+}
+
+
+
+.cantidades{
+
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    height: 40%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0 2px 4px rgb(130, 130, 130);
+    border-radius: 10px;
+}
+
+.boton_cantidad{
+    width: 33%;
+    height: 70%;
+    height: 100%;
+    background: none;
+    border-style: none;
+    font-size: 35px;
+}
+.cantidad{
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.footer_modal_carrito{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.ir_pago{
+    border-style: none;
+    border-radius: 10px;
+    background: #0ac863;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    height: 80%;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 10px auto;
+}
+
+.numero{
+    background-color: #059c4b;
+    width: 10%;
+    height: 70%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 8px;
+
+}
+
+.vaciar{
+    margin: auto 10px auto;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgb(74, 74, 74);
+    background-color: rgb(255, 255, 255);
+    height: 80%;
+    width: 20%;
+} 
+
+
+.modal_iframe{
+    width: 100%;
+    height: 90%;
+}
+
+
+.general_modal{
+    background: white;
+}
+
+
+.sub_modal_carrito{
+    width: 100%;
+    height: 90%;
+}

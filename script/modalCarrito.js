@@ -1,42 +1,60 @@
 const open_carrito = document.getElementById('open_carrito');
-const modal_carrito = document.getElementById('carrito-modal-container')
+const modal_carrito_container = document.getElementById('carrito-modal-container')
 const close_carrito =  document.getElementById('close_carrito');
 
 open_carrito.addEventListener('click',()=>{
-    modal_carrito.classList.add('show')
+    modal_carrito_container.classList.add('show');
+    console.log('se muestra el modal')
 })
 
 close_carrito.addEventListener('click',()=>{
-    modal_carrito.classList.remove('show')
+    modal_carrito_container.classList.remove('show')
+    console.log('se cierra el modal');
+    console.log(modal_carrito_container)
 })
 
-//Seccion de modal carrito lleno
 
-//session storage - agregar objeto 
-
-const productos = [{ id: 1,  producto: "Arroz", precio: 125 },
-                  {  id: 2,  producto: "Fideo", precio: 70 },
-                  {  id: 3,  producto: "Pan"  , precio: 50},
-                  {  id: 4,  producto: "Flan" , precio: 100}];
-
-const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
-
-// Almacenar array completo
-guardarLocal("listaProductos", JSON.stringify(productos));
+//seccion de iframe
 
 
-//Traer la lista de objetos
-let lista_actualizada = JSON.parse( localStorage.getItem('listaProductos'));
-console.log(lista_actualizada)
+//Elementos a alterar en el modal
+const seccion_carrito= document.getElementById('seccion_carrito');
+const modal_carrito = document.getElementById('sub_modal_carrito');
 
-function crearItemLista(lista){
-    lista.forEach(item => {
-        let {producto,precio,id}=item;
-        console.log('precio:'+precio+'  producto:  '+producto+'  id:  '+id)
-        
-    });
+let lista = JSON.parse( sessionStorage.getItem('listaProductos'));
+console.log(lista)
+
+if(lista === '[]'){
+    console.log('no hay nada en el carrito');
+    seccion_carrito.innerHTML=`
+    <iframe src="modalCarrito.html" frameborder="0" class="modal_iframe"></iframe>
+    `;
+
+}if(sessionStorage.getItem('listaProductos').length >3 ){
+    console.log(modal_carrito)
+    modal_carrito.innerHTML=`
+    <iframe src="modalCarrito.html" frameborder="0" class="modal_iframe"></iframe>
+
+    <div class="footer_modal_carrito">
+    <button class="vaciar" id="vaciar_canasta">
+        Vaciar carrito
+    </button>
+
+    <button class="ir_pago" id="ir_pago">
+        <h4 class="numero">
+            5
+        </h4>
+        <h4>Ir a pagar</h4>
+        <h4 class="total_pago">
+            260$
+        </h4>
+    </button>
+</div>
+    `
+
 }
 
-crearItemLista(lista_actualizada) 
+
+
 
 
