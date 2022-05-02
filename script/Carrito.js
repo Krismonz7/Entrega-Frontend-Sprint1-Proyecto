@@ -1,20 +1,6 @@
 //seccion de variaciones en el modal carrito
 const seccion  =  document.getElementById('general_modal')
 
-
-//session storage - agregar objeto 
-const productos = [{nombre:'zukaritas', cantidad:3,precio:20},
-{nombre:'frutloops', cantidad:1,precio:22},
-{nombre:'Rayos', cantidad:3,precio:12},
-{nombre:'salmon', cantidad:3,precio:37},
-{nombre:'Super Ricas', cantidad:6,precio:20}];
-const guardarLocal = (clave, valor) => { sessionStorage.setItem(clave, valor) };
-
-
-// Almacenar array completo
-guardarLocal("listaProductos", JSON.stringify(productos));
-
-
 //Condicional de carrito vacio/lleno
 //Traer la lista de objetos
 let lista = JSON.parse( sessionStorage.getItem('listaProductos'));
@@ -47,10 +33,7 @@ if(lista === '[]'){
 }
 
 
-
-
-
-
+//Pintar carrito lleno
 if(sessionStorage.getItem('listaProductos').length >3 ){
     console.log('hay algo en el carrito');
     lista.forEach(objeto=>{
@@ -69,7 +52,7 @@ if(sessionStorage.getItem('listaProductos').length >3 ){
             </h3>
         </div> 
         <div class="cantidades">
-            <button class="boton_cantidad">
+            <button class="boton_cantidad"> 
                 +
             </button>
             <h2 class="cantidad">

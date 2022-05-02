@@ -25,7 +25,6 @@ const ciudad_modal_carrito =  document.getElementById('ciudad_modal_carrito')
 
 
 function valor_ciudad(){
-    console.log(listado_ciudades.value);
     localStorage.setItem('ubicacion',listado_ciudades.value);
     ciudad.innerHTML=`${listado_ciudades.value}`
     ciudad_modal_carrito.innerHTML=` ${listado_ciudades.value}`

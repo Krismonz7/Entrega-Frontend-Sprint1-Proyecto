@@ -17,8 +17,11 @@ function crearTarjeta(datos){
         let precio= objeto.precio;
         let descuento= objeto.descuento;
         let imagen= objeto.imagen;
+        let id =  objeto.id;
+        let seccion ='ofertas';
         cards.innerHTML+=`
-        <div class="tarjeta">
+        <div class="tarjeta" value="seccion_ofertas">
+        <input type="hidden" >
         <p class="descuento">
             ${descuento}%dto
         </p>
@@ -27,7 +30,7 @@ function crearTarjeta(datos){
         </div>
         <p class="precio">$ ${precio}/kg</p>
         <p class="titulo"> ${nombre}</p>
-        <button class="agregar">
+        <button class="agregar" onclick="agregar_carrito('${nombre}','${id}','${seccion}','${precio}','${imagen}')">
             Agregar
         </button>
     </div> 
@@ -59,6 +62,8 @@ function crearTarjeta2(datos2){
         let nombre= objeto2.nombre;
         let precio= objeto2.precio;
         let imagen= objeto2.imagen;
+        let id=objeto2.id;
+        let seccion='populares';
         cards2.innerHTML+=`
         <div class="tarjeta">
         <div class="imagen_tarjeta">
@@ -66,7 +71,7 @@ function crearTarjeta2(datos2){
         </div>
         <p class="precio">$ ${precio}/kg</p>
         <p class="titulo"> ${nombre}</p>
-        <button class="agregar">
+        <button class="agregar" onclick="agregar_carrito('${nombre}','${id}','${seccion}','${precio}','${imagen}')">
             Agregar
         </button>
     </div>  `

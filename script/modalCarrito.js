@@ -4,17 +4,15 @@ const close_carrito =  document.getElementById('close_carrito');
 
 open_carrito.addEventListener('click',()=>{
     modal_carrito_container.classList.add('show');
-    console.log('se muestra el modal')
 })
 
 close_carrito.addEventListener('click',()=>{
-    modal_carrito_container.classList.remove('show')
-    console.log('se cierra el modal');
-    console.log(modal_carrito_container)
+    modal_carrito_container.classList.remove('show');
 })
 
 
 //seccion de iframe
+
 
 
 //Elementos a alterar en el modal
@@ -22,7 +20,6 @@ const seccion_carrito= document.getElementById('seccion_carrito');
 const modal_carrito = document.getElementById('sub_modal_carrito');
 
 let lista = JSON.parse( sessionStorage.getItem('listaProductos'));
-console.log(lista)
 
 if(lista === '[]'){
     console.log('no hay nada en el carrito');
@@ -31,7 +28,7 @@ if(lista === '[]'){
     `;
 
 }if(sessionStorage.getItem('listaProductos').length >3 ){
-    console.log(modal_carrito)
+    console.log('hay productos en el carrito')
     modal_carrito.innerHTML=`
     <iframe src="modalCarrito.html" frameborder="0" class="modal_iframe"></iframe>
 
@@ -51,8 +48,8 @@ if(lista === '[]'){
     </button>
 </div>
     `
-
 }
+
 
 
 
